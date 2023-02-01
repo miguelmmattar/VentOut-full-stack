@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto&family=Roboto+Mono:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    transition: all ease .2s;
+  }
+  
+h1 {
+    font-family: "Archivo Black", sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+body, 
+p, 
+div, 
+a, 
+span,
+select,
+button
+ {
+    font-family: 'Roboto', monospace;
+    letter-spacing: 2px;
+}
+
+.desktop {
+    display: none !important;
+}
+
+.mobile {
+    display: flex !important;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0px;
+    outline: 0;
+}
+
+@media(min-width: 1024px) {
+    .desktop {
+        display: flex !important;
+    }
+
+    .mobile {
+        display: none !important;
+    }
+
+    *::-webkit-scrollbar {
+        width: 6px;
+        background-color: #F8F8F8; 
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: #A7ADB040;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+}

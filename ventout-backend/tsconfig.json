@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "commonjs",
+    "outDir": "dist",
+    "noImplicitAny": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "rootDirs": [
+      "src",
+      "tests"
+    ],
+    "baseUrl": "src",
+    "paths": {
+      "@/*": [
+        "*"
+      ]
+    },
+    "plugins": [
+      {
+        "transform": "typescript-transform-paths"
+      }
+    ],
+    "allowJs": true,
+    "checkJs": false,
+    "lib": [
+      "es5", "es6", "dom", "dom.iterable"
+  ]
+  },
+  "include": [
+    "src",
+    "tests", 
+    "credit-card.d.ts",
+    "prisma"  
+  ]
+}

@@ -1,0 +1,109 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["interactiveTransactions", "referentialActions"]
+  binaryTargets   = ["native", "debian-openssl-1.1.x", "linux-musl"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id         Int          @id @default(autoincrement())
+  email      String       @unique @db.VarChar(255)
+  name       String
+  Session    Session[]
+  MyMoods    MyMoods[]
+  MyReports  MyReports[]
+  createdAt  DateTime     @default(now())
+  updatedAt  DateTime     @updatedAt 
+}
+
+model Session {
+  id        Int       @id @default(autoincrement())
+  userId    Int
+  User      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  token     String
+  createdAt DateTime  @default(now())
+}
+
+model Moods {
+  id        Int      @id @default(autoincrement())
+  name      String
+  color     String
+  MyMoods   MyMoods[] 
+}
+
+model MyMoods {
+  id        Int       @id @default(autoincrement())
+  userId    Int
+  User      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  moodId    Int
+  Moods     Moods     @relation(fields: [moodId], references: [id])
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+}
+
+model MyReports {
+  id          Int            @id @default(autoincrement())
+  userId      Int
+  User        User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  date        DateTime
+  text        String 
+  MyEmotions  MyEmotions[]
+  MySymptoms  MySymptoms[]
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+}
+
+model Emotions {
+  id          Int           @id @default(autoincrement())
+  name        String
+  color       String
+  MyEmotions  MyEmotions[]  
+}
+
+model MyEmotions {
+  id          Int           @id @default(autoincrement())
+  reportId    Int 
+  MyReports   MyReports     @relation(fields: [reportId], references: [id], onDelete: Cascade)
+  emotionId   Int
+  Emotions    Emotions      @relation(fields: [emotionId], references: [id])
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+}
+
+model Symptoms {
+  id              Int           @id @default(autoincrement())
+  name            String
+  type            SymptomType
+  spotId          Int
+  Spots           Spots         @relation(fields: [spotId], references: [id])
+  MySymptoms      MySymptoms[] 
+}
+
+enum SymptomType {
+  PHYSICAL
+  EMOTIONAL
+}
+
+model MySymptoms {
+  id          Int           @id @default(autoincrement())
+  reportId    Int
+  MyReports   MyReports     @relation(fields: [reportId], references: [id], onDelete: Cascade)
+  symptomId   Int
+  Symptoms    Symptoms      @relation(fields: [symptomId], references: [id])
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+}
+
+model Spots {
+  id          Int          @id @default(autoincrement())
+  name        String
+  color       String
+  Symptoms    Symptoms[] 
+}
