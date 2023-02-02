@@ -128,6 +128,8 @@ const StyledChartsHistory = styled.div`
   div:first-child {
     padding-top: 0 !important;
   }
+
+  margin-top: 34px;
 `;
 
 const StyledSelect = styled.div`
@@ -136,6 +138,8 @@ const StyledSelect = styled.div`
   right: 20px;
   top: 100px;
   z-index: 1;
+  border-radius: 10px;
+  box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.15);
 
   div {
     padding: 0 2px;
@@ -146,9 +150,6 @@ const StyledSelect = styled.div`
   }
 
   @media(min-width: 1024px) {
-    right: 120px;
+    right: 200px;
   }
-
-
-  
 `;

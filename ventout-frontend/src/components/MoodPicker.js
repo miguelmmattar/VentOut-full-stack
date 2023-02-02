@@ -130,6 +130,7 @@ const MoodWrapper = styled.div`
         font-size: 14px;
         font-weight: 700;
         color: ${(props) => props.mainPalette.main};
+        margin: 0 !important;
     }
 
     svg {

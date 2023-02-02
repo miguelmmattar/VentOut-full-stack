@@ -30,8 +30,8 @@ const StyledDashboard = styled.div`
   }
 
   @media(min-width: 768px) and (max-width: 1023px) {
-    padding-left: 140px;
-    padding-right: 140px;
+    padding-left: 20%;
+    padding-right: 20%;
 
     .alternative-message, .history-page {
       width: 100%;
@@ -39,6 +39,11 @@ const StyledDashboard = styled.div`
       margin-top: 300px !important;
       font-size: 22px;
       line-height: 28px;
+    }
+
+    h5 {
+      font-size: 18px !important;
+      margin: 36px 0 10px 0 !important;
     }
   }
 

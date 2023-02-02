@@ -51,7 +51,7 @@ const StyledFooter = styled.div`
     box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.25);
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
+    padding: 0 15%;
     position: relative;
 
     svg {
@@ -81,5 +81,9 @@ const StyledFooter = styled.div`
         cursor: ${(props) => (props.location === '/dashboard/add/report' ? 'initial' : 'pointer')};
         width: 58px;
         height: 58px;
+    }
+
+    @media(min-width: 768px) and (max-width: 1023px) {
+      padding: 0 25%;
     }
 `;
