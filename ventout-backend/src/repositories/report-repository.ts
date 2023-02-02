@@ -21,7 +21,7 @@ async function createReport(date: Date, text: string, userId: number): Promise<n
 async function findUserReports(userId: number, skip: number): Promise<ReportsList> {
   const userReports = await prisma.myReports.findMany({
     skip,
-    take: 40,
+    take: 30,
     orderBy: [
       {
         date: "desc",

@@ -54,7 +54,7 @@ export default function Reports() {
               </ScrollLoader>
             )}
             loadMore={async () => {
-              if (reportsList.length % 40 !== 0) return;
+              if (reportsList.length % 30 !== 0) return;
               setLoadMore(true);
               setTimeout(loadReportsData, 1000);
             }}

@@ -8,7 +8,7 @@ import { MyMoods } from "@prisma/client";
 async function findByUserId(userId: number, skip: number) {
   const userMoods = await prisma.myMoods.findMany({
     skip,
-    take: 40,
+    take: 30,
     where: {
       userId,
     },

@@ -60,7 +60,7 @@ export default function Moods() {
               </ScrollLoader>
             )}
             loadMore={async () => {
-              if (moodsList.length % 40 !== 0) return;
+              if (moodsList.length % 30 !== 0) return;
               setLoadMore(true);
               setTimeout(loadMoodsData, 1000);
             }}

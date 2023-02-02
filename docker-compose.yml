@@ -16,7 +16,7 @@ services:
     ports:
       - 2345:5432
     env_file:
-      - ./node/.env
+      - ./ventout-backend/.env
     volumes:
       - volume_banco:/var/lib/postgresql/data
 
@@ -26,9 +26,9 @@ services:
     ports:
       - 4000:4000
     env_file:
-      - ./node/.env
+      - ./ventout-backend/.env
     volumes:
-      - ./node:/usr/src
+      - ./ventout-backend:/usr/src
       - /usr/src/node_modules
     entrypoint: dockerize -wait tcp://banco:5432 -timeout 20s docker-entrypoint.sh
     command: "npm run start"

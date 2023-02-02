@@ -88,8 +88,9 @@ export const StyledHistory = styled.div`
   @media(min-width: 1024px) {
     position: initial;
     flex-direction: row;
-    margin: 20px 0;
+    padding: 20px 150px;
     flex-wrap: wrap;
+    justify-content: center;
 
     div {
       border-radius: 10px;

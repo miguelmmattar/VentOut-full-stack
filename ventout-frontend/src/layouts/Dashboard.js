@@ -44,6 +44,7 @@ const StyledDashboard = styled.div`
 
   @media(min-width: 1024px) {
     margin-bottom: 0;
+    padding: 80px 100px 40px 100px;
 
     .alternative-message, .history-page {
       width: 100%;
