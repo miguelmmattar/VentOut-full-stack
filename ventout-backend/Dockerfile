@@ -12,11 +12,11 @@ COPY . .
 
 RUN npx prisma generate
 
-RUN npm run prisma migrate deploy
+RUN npx run prisma migrate deploy
 
-RUN npm run prisma migrate dev
+RUN npx run prisma migrate dev
 
-RUN npm run prisma db seed
+RUN npx run prisma db seed
 
 RUN apt-get update && apt-get install -y wget
 

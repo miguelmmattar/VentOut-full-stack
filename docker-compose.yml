@@ -14,7 +14,7 @@ services:
     image: postgres
     container_name: banco
     ports:
-      - 2345:5432
+      - 5432:5432
     env_file:
       - ./ventout-backend/.env
     volumes:
