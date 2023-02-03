@@ -25,7 +25,7 @@
     "dev:seed": "npm run dev:load-envs prisma db seed",
     "dev": "NODE_ENV=development nodemon --watch 'src/' --exec 'ts-node -r tsconfig-paths/register ./src/server.ts' -e ts"
   },
-  "keywords": [
+  "keywords": [ 
     "VentOut",
     "back-end",
     "typescript",
