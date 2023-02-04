@@ -47,7 +47,7 @@ export default function OAuth({ children, name, color }) {
 
     try {
       userData = await signIn(email, accessToken);
-      console.log(userData);
+
       setUserData(userData);
       navigate('/dashboard/home');
     } catch {

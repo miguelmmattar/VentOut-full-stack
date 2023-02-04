@@ -57,7 +57,7 @@ export default function SignUp() {
   }
 
   if (error) {
-    console.log(error);
+    toast('Unable to coplete registration!');
   }
 
   return (

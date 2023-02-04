@@ -50,7 +50,7 @@ export default function SignIn() {
       navigate('/dashboard/home');
     } catch {
       if (error) {
-        console.log(error);
+        toast('Unable to login!');
       }
       toast('Unable to login!');
       setData({
