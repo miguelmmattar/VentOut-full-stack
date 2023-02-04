@@ -1,7 +1,6 @@
 import { Moods, MyMoods } from "@prisma/client";
 import { prisma } from "@/config";
 import initialData from "../../prisma/prisma-utils/initialData";
-import { UpsertMoodParams } from "@/services/mood-service";
 
 export async function createMood(userId: number): Promise<MyMoods & {Moods: Moods}> {
   const mood = await prisma.moods.findFirst({});

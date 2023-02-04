@@ -59,7 +59,7 @@ export async function createReport(userId: number) {
       },
       MySymptoms: {
         orderBy: [{
-          createdAt: 'asc',
+          createdAt: "asc",
         }],
         select: {
           Symptoms: {

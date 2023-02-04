@@ -1,8 +1,7 @@
 import { prisma } from "@/config";
 import { DateFilter } from "@/protocols";
 import { callFilter } from "@/utils/date-utils";
-import { MyEmotions, Emotions } from "@prisma/client";
-import { date } from "joi";
+import { MyEmotions } from "@prisma/client";
 
 async function findAll() {
   const emotions = await prisma.emotions.findMany({});

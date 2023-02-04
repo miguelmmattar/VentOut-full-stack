@@ -36,7 +36,6 @@ async function findFiltered(userId: number, filter: DateFilter) {
 }
 
 async function upsert(newMood: MoodParams, name: string) {
-  const previousMoodId: number | undefined = undefined;
   let result: MyMoods;
 
   await prisma.$transaction(async (tx) => {

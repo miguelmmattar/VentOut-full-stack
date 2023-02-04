@@ -1,4 +1,4 @@
-import { Emotions, Moods, Spots, Symptoms, SymptomType } from "@prisma/client";
+import { Emotions, Moods, Symptoms, SymptomType } from "@prisma/client";
 
 export type ApplicationError = {
     name: string;

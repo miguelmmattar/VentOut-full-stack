@@ -1,7 +1,7 @@
 import { prisma } from "@/config";
 import { DateFilter } from "@/protocols";
 import { callFilter } from "@/utils/date-utils";
-import { MySymptoms, Symptoms, SymptomType } from "@prisma/client";
+import { MySymptoms, SymptomType } from "@prisma/client";
 
 async function findAllPhysical() {
   const physicalSymptoms = await prisma.symptoms.findMany({

@@ -1,6 +1,6 @@
 import Joi from "joi";
 
-import { LoginParams, LogoutParams, RegisterParams } from "@/protocols";
+import { LoginParams, RegisterParams } from "@/protocols";
 
 export const signInSchema = Joi.object<LoginParams>({
   email: Joi.string().email().required(),

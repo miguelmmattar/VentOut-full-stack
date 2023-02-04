@@ -1,7 +1,6 @@
 import { notFoundError } from "@/errors";
 import { DateFilter } from "@/protocols";
 import emotionRepository from "@/repositories/emotion-repository";
-import reportRepository from "@/repositories/report-repository";
 import symptomRepository from "@/repositories/symptom-repository";
 import { SymptomType } from "@prisma/client";
 import dataUtils from "../utils/data-utils";

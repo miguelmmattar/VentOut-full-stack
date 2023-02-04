@@ -1,11 +1,11 @@
 import httpStatus from "http-status";
 
-import { invalidDataError, notFoundError, requestError } from "@/errors";
+import { notFoundError, requestError } from "@/errors";
 import { incomingEmotion, incomingSymptom } from "@/protocols";
 import emotionRepository from "@/repositories/emotion-repository";
 import reportRepository from "@/repositories/report-repository";
 import symptomRepository from "@/repositories/symptom-repository";
-import { Emotions, MyReports, Symptoms } from "@prisma/client";
+import { MyReports } from "@prisma/client";
 import reportUtils from "../utils/report-utils";
 
 async function createNewReport(params: ReportParams, userId: number) {
