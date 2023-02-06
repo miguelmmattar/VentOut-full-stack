@@ -32,7 +32,7 @@ function filterByWeek(date: string | Date) {
       month --;
     } 
   } 
-  
+
   return `${year}-${month}-${day}`;
 }
 
@@ -57,7 +57,7 @@ function callFilter(filter: DateFilter) {
   if(filter.param === filters.month) result = filterByMonth(filter.date);
   if(filter.param === filters.year) result = filterByYear(filter.date);
   if(filter.param === filters.allTime) result = (new Date(0)).toString();
-  
+
   return result;
 }
 

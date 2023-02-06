@@ -24,7 +24,7 @@ services:
     build: ./ventout-backend
     container_name: app_node
     ports:
-      - 4000:4000
+      - 443:443
     env_file:
       - ./ventout-backend/.env
     volumes:
