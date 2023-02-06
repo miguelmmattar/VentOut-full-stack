@@ -46,15 +46,15 @@ export default function Charts() {
 
   return (
     <StyledChartsHistory>
+      <SelectWindow
+        placeholder="Select a time window"
+        setWindow={setWindow}
+      />
+
       { data.emotions?.length === 0
         ? <p className="alternative-message history-page">It looks like you haven&apos;t made any reports lately...</p> : (
 
           <StyledHome mainPalette={mainPalette}>
-            <SelectWindow
-              placeholder="Add an emotion"
-              setWindow={setWindow}
-            />
-
             <div className="week-area emotions-area">
               <Chart label={window === dateFilters.week ? 'My Week' : 'My Weeks'}>
                 {!data.week || chartsDataLoading

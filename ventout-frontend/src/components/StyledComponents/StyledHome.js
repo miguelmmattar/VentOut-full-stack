@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const StyledHome = styled.div`
-  padding-top: 90px;
   position: relative;
 
   p {
@@ -27,7 +26,7 @@ const StyledHome = styled.div`
   @media(min-width: 1024px) {
     display: flex;
     justify-content: space-between;
-    padding: 100px 100px 0 100px;
+    padding: 0 100px;
     height: 100%;
 
     .symptoms-area {
