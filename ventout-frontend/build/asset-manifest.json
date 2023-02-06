@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.7608d98a.css",
-    "main.js": "/static/js/main.4a25c8ee.js",
+    "main.js": "/static/js/main.5b6716cf.js",
     "static/media/ventout-logo.png": "/static/media/ventout-logo.e6d9596fe1dbfc64cc31.png",
     "index.html": "/index.html",
     "main.7608d98a.css.map": "/static/css/main.7608d98a.css.map",
-    "main.4a25c8ee.js.map": "/static/js/main.4a25c8ee.js.map"
+    "main.5b6716cf.js.map": "/static/js/main.5b6716cf.js.map"
   },
   "entrypoints": [
     "static/css/main.7608d98a.css",
-    "static/js/main.4a25c8ee.js"
+    "static/js/main.5b6716cf.js"
   ]
 }
