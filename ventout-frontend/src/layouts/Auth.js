@@ -79,16 +79,24 @@ const StyledAuth = styled.div`
         }
       }
 
-      @media(min-width: 1024px) {
-          width: 500px;
-          height: auto;
-          border-radius: 20px;
-          border: solid 1px ${(props) => props.mainPalette.border};
-          box-shadow: 2px -2px 4px rgba(0, 0, 0, 0.15);
+      @media(min-width: 768px) and (max-width: 1023px) {
+        padding: 30% 20%;
 
-          img {
-            margin: 50px 0 40px 0; 
-          }
+        h2 {
+          margin-left: 20px;
+        }
+      }
+
+      @media(min-width: 1024px) {
+        width: 500px;
+        height: auto;
+        border-radius: 20px;
+        border: solid 1px ${(props) => props.mainPalette.border};
+        box-shadow: 2px -2px 4px rgba(0, 0, 0, 0.15);
+
+        img {
+          margin: 50px 0 40px 0; 
+        }
       }
     }
 `;
