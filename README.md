@@ -32,3 +32,37 @@ The following tools and frameworks were used in the construction of the project:
   <img style='margin: 5px;' src="https://img.shields.io/badge/amazon--web--services-AWS-yellow?style=for-the-badge"/>
   <img style='margin: 5px;' src="https://img.shields.io/badge/docker-docker--compose-informational?style=for-the-badge&logo=docker&logoColor=informational"/>
 </p>
+
+## How to run
+
+1. Clone this repository
+2. Make sure you have docker and docker-compose installed
+3. Build the docker with:
+```bash
+docker-compose up --build nginx
+```
+
+## Without Docker
+
+1. Clone this repository
+
+### On ventout-backend directory:
+2. Create two PostgreSQL databases: "ventout" and "ventout_test"
+3. Create a .env.test and a .env.development file according to .env.example pointing to the databases you have created
+4. Open this directory on terminal and run:
+```bash
+npm run test:load-envs prisma migrate deploy
+npm run test:load-envs prisma migrate dev
+npm run test:load-envs prisma db seed
+npm run dev:load-envs prisma migrate deploy
+npm run dev:load-envs prisma migrate dev
+npm run dev:load-envs prisma db seed
+NODE_ENV=development nodemon --watch 'src/' --exec 'ts-node -r tsconfig-paths/register ./src/server.ts' -e ts
+```
+### On ventout-frontend directory:
+5. Create a .env file according to .env.example pointing to the api (http://localhost:4000)
+6. Open this directory on terminal and run:
+```bash
+npm start
+```
+7. Check your browser (the front-end interface should open on http://localhost:3000)
