@@ -36,8 +36,9 @@ The following tools and frameworks were used in the construction of the project:
 ## How to run
 
 1. Clone this repository
-2. Make sure you have docker and docker-compose installed
-3. Build the docker with:
+2. Create a .env file according to .env.example
+3. Make sure you have docker and docker-compose installed
+4. Build the docker with:
 ```bash
 docker-compose up --build nginx
 ```
