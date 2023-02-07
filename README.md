@@ -1,6 +1,6 @@
 # VentOut
 
-An easy to use emotional manager. Report anything you want and it will help you understand how you feel.
+An easy to use emotional manager. Report anything you want and we will help you understand how you feel.
 
 <img src="/assets/my-wallet-usage.gif" />
 
