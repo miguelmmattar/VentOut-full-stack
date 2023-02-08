@@ -164,4 +164,5 @@ const StyledMoodPicker = styled.div`
     position: absolute;
     left: 0;
     top: 80px;
+    z-index: 2;
 `;

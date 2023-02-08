@@ -72,6 +72,15 @@ const Title = styled.div`
     align-items: center;
     justify-content: center;
     left: 0;
+    padding-top: 30px;
+
+    @media(min-width: 768px) and (max-width: 1023px) {
+      padding-top: 0;
+    }
+
+    @media(min-width: 1024px) {
+      padding-top: 0;
+    }
 `;
 
 const HeaderContainer = styled.div`

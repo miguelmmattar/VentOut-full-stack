@@ -125,7 +125,7 @@ function SelectWindow({ placeholder, setWindow }) {
 }
 
 const StyledChartsHistory = styled.div`
-  div:first-child {
+  div:nth-child(2) {
     padding-top: 0 !important;
   }
 
