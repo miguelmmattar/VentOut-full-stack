@@ -1,9 +1,8 @@
 import { Router } from "express";
 
-import { createOrUpdateMood, getTodaysMood, getUserMoods } from "@/controllers";
-import { validateBody } from "@/middlewares";
-import { postMoodSchema } from "@/schemas";
-import { authenticateToken } from "@/middlewares";
+import { createOrUpdateMood, getTodaysMood, getUserMoods } from "../controllers";
+import { validateBody, authenticateToken } from "../middlewares";
+import { postMoodSchema } from "../schemas";
 
 const moodRouter = Router();
 

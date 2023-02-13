@@ -1,8 +1,8 @@
 import Joi from "joi";
 
-import { MoodParams, UpsertMoodParams } from "@/services/mood-service";
-import { ReportParams } from "@/services/report-service";
-import { incomingEmotion, incomingSymptom } from "@/protocols";
+import { MoodParams, UpsertMoodParams } from "../services/mood-service";
+import { ReportParams } from "../services/report-service";
+import { incomingEmotion, incomingSymptom } from "../protocols";
 
 export const postMoodSchema = Joi.object<UpsertMoodParams>({
   name: Joi.string().min(1).required(),

@@ -1,7 +1,7 @@
-import { prisma } from "@/config";
+import { prisma } from "../config";
 
 import { Prisma, Session } from "@prisma/client";
-import { NewSessionParams, NewUserParams } from "@/services/authentication-service";
+import { NewSessionParams, NewUserParams } from "../services/authentication-service";
 
 async function findByEmail(email: string) {
   const user: Prisma.UserFindUniqueArgs = {

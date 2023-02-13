@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
 import httpStatus from "http-status";
 
-import moodService, { UpsertMoodParams } from "@/services/mood-service";
-import { DateFilter } from "@/protocols";
+import moodService, { UpsertMoodParams } from "../services/mood-service";
+import { DateFilter } from "../protocols";
 
 export async function getTodaysMood(req: Request, res: Response) {
   const { userId } = res.locals;

@@ -1,5 +1,5 @@
-import { LoginParams } from "@/protocols";
-import authenticationService, { SignUpParams } from "@/services/authentication-service";
+import { LoginParams } from "../protocols";
+import authenticationService, { SignUpParams } from "../services/authentication-service";
 import { Request, Response } from "express";
 import httpStatus from "http-status";
 

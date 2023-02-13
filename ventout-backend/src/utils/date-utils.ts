@@ -1,4 +1,4 @@
-import { DateFilter } from "@/protocols";
+import { DateFilter } from "../protocols";
 
 const filters = {
   day: "day",

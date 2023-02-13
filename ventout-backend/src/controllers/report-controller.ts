@@ -1,4 +1,4 @@
-import reportService, { ReportParams } from "@/services/report-service";
+import reportService, { ReportParams } from "../services/report-service";
 import { Request, Response } from "express"; 
 import httpStatus from "http-status"; 
 

@@ -1,9 +1,8 @@
 import { Router } from "express";
 
-import { getReportById, getUserReports, postReport } from "@/controllers";
-import { validateBody } from "@/middlewares";
-import { postReportSchema } from "@/schemas";
-import { authenticateToken } from "@/middlewares";
+import { getReportById, getUserReports, postReport } from "../controllers";
+import { validateBody, authenticateToken } from "../middlewares";
+import { postReportSchema } from "../schemas";
  
 const reportRouter = Router();
 

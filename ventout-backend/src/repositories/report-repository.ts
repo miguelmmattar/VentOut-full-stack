@@ -1,6 +1,6 @@
-import { prisma } from "@/config";
+import { prisma } from "../config";
 
-import { ReportsList } from "@/services/report-service";
+import { ReportsList } from "../services/report-service";
 
 async function createReport(date: Date, text: string, userId: number): Promise<number> {
   const newReport = await prisma.myReports.create({

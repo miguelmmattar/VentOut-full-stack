@@ -1,8 +1,8 @@
 import dayjs from "dayjs";
 
-import { notFoundError, invalidCredentialsError } from "@/errors";
-import { LoginParams } from "@/protocols";
-import authenticationRepository from "@/repositories/authentication-repository";
+import { notFoundError, invalidCredentialsError } from "../errors";
+import { LoginParams } from "../protocols";
+import authenticationRepository from "../repositories/authentication-repository";
 import { Session, User } from "@prisma/client";
 
 async function signUp(params: SignUpParams): Promise<SignUpResult> {

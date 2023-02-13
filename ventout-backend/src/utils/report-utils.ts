@@ -1,4 +1,4 @@
-import { Report } from "@/services/report-service";
+import { Report } from "../services/report-service";
 import { SymptomType } from "@prisma/client";
 
 function processReportData(reportData: RawData): Report {

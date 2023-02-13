@@ -1,4 +1,4 @@
-import { InitialEmotionData, InitialSymptomData } from "@/services/data-service";
+import { InitialEmotionData, InitialSymptomData } from "../services/data-service";
 import { Emotions,  MyReports, MySymptoms, Spots, Symptoms } from "@prisma/client";
 import { getWeekDay } from "./date-utils";
 

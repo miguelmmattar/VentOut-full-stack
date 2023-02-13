@@ -1,6 +1,6 @@
-import { notFoundError } from "@/errors";
-import { DateFilter } from "@/protocols";
-import moodRepository from "@/repositories/mood-repository";
+import { notFoundError } from "../errors";
+import { DateFilter } from "../protocols";
+import moodRepository from "../repositories/mood-repository";
 import { Moods, MyMoods } from "@prisma/client"; 
 
 async function findTodaysMood(params: TodaysMoodParams): Promise<Moods> {

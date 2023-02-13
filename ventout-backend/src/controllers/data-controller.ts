@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
 import httpStatus from "http-status";
 
-import dataService from "@/services/data-service";
-import { DateFilter } from "@/protocols";
+import dataService from "../services/data-service";
+import { DateFilter } from "../protocols";
 
 export async function getInitialData(req: Request, res: Response) { 
   try {

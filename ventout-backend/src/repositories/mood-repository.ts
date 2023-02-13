@@ -1,8 +1,8 @@
-import { prisma } from "@/config";
-import { invalidDataError } from "@/errors";
-import { DateFilter } from "@/protocols";
-import { MoodParams } from "@/services/mood-service";
-import { callFilter, filters } from "@/utils/date-utils";
+import { prisma } from "../config";
+import { invalidDataError } from "../errors";
+import { DateFilter } from "../protocols";
+import { MoodParams } from "../services/mood-service";
+import { callFilter, filters } from "../utils/date-utils";
 import { MyMoods } from "@prisma/client";
  
 async function findByUserId(userId: number, skip: number) {

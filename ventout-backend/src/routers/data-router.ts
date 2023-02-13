@@ -1,7 +1,7 @@
 import { Router } from "express";
 
-import { getFilteredData, getInitialData } from "@/controllers";
-import { authenticateToken } from "@/middlewares";
+import { getFilteredData, getInitialData } from "../controllers";
+import { authenticateToken } from "../middlewares";
 
 const dataRouter = Router();
 

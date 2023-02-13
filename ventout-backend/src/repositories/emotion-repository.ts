@@ -1,6 +1,6 @@
-import { prisma } from "@/config";
-import { DateFilter } from "@/protocols";
-import { callFilter } from "@/utils/date-utils";
+import { prisma } from "../config";
+import { DateFilter } from "../protocols";
+import { callFilter } from "../utils/date-utils";
 import { MyEmotions } from "@prisma/client";
 
 async function findAll() {
