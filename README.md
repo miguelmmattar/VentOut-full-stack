@@ -4,6 +4,8 @@ An easy to use emotional manager. Report anything you want and we will help you 
 
 <img src="/VentOut-preview.png" />
 
+You can access this app at: https://vent-out-front.vercel.app/
+
 ## About
 
 This is an web application with which you can write to yourself how you feel when you feel it. The ideia is that you shouldn't have wait to describe your feelings and emotions, to your therapist or even a friend, so write them right on the moment and don't loose any detail. The app will compile all your reports and save them for whenever you want to revisit them. Also, to help you see a big picture of mental and physical health, it will automactically create a few charts based on what you are sharing. Below are the implemented features:
