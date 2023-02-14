@@ -4,7 +4,7 @@ An easy to use emotional manager. Report anything you want and we will help you 
 
 <img src="/VentOut-preview.png" />
 
-You can access this app at: https://vent-out-front.vercel.app/
+You can access this app <a href="https://vent-out-front.vercel.app" target="_blank">here</a>
 
 ## About
 
